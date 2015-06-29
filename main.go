@@ -75,6 +75,7 @@ func myAppCtxHandler(ctx *appContext, w http.ResponseWriter, r *http.Request) (i
 
 func main() {
 	port := flag.String("port", "8000", "Port to listen on.")
+	flag.Parse()
 
 	// Simple function
 	http.HandleFunc("/func", funcHandler)

@@ -1,1 +1,1 @@
-main: hello-go
+main: hello-go -port $PORT
